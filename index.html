@@ -22,7 +22,7 @@
 .cby-lockup-strategy { height:36px;width:auto; }
 .cby-status { display:flex;align-items:center;gap:9px;font-size:15px;font-weight:500;margin-bottom:22px; }
 .cby-dot { width:10px;height:10px;border-radius:50%;background:#22C55E;flex-shrink:0;box-shadow:0 0 0 3px rgba(34,197,94,0.18); }
-.cby-bio { font-size:14.5px!important;line-height:1.65!important;color:#333!important;margin-bottom:36px!important; }
+.cby-left .cby-bio { font-size:14.5px!important;line-height:1.65!important;color:#333!important;margin-bottom:48px!important; }
 .cby-contact-head { font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:#111;margin-bottom:12px; }
 .cby-contact-links { display:flex;flex-direction:column;gap:9px; }
 .cby-contact-links a { font-size:13.5px!important;color:#222!important;text-decoration:none!important;display:flex;align-items:center;gap:7px; }
@@ -36,7 +36,7 @@
 .cby-tab-nav a { padding:16px 14px!important;font-size:13.5px!important;color:#999!important;text-decoration:none!important;border-bottom:2px solid transparent!important;margin-bottom:-1px;transition:color .15s;white-space:nowrap;display:block!important;font-weight:400!important;border-top:none!important;border-left:none!important;border-right:none!important; }
 .cby-tab-nav a:hover { color:#333!important; }
 
-/* Panels — hidden by default, About shown by default */
+/* Panels â€” hidden by default, About shown by default */
 .cby-panel { display:none!important;padding:28px 28px 32px; }
 #cby-panel-about { display:block!important; }
 
@@ -48,7 +48,7 @@
 .cby-module:has(#cby-tab-contact:target) #cby-panel-contact { display:block!important; }
 .cby-module:has(#cby-tab-contact:target) #cby-panel-about { display:none!important; }
 
-/* Active tab indicator — About active by default */
+/* Active tab indicator â€” About active by default */
 .cby-tab-nav a[href="#cby-tab-about"] { color:#111!important;font-weight:600!important;border-bottom-color:#111!important; }
 .cby-module:has(#cby-tab-work:target) .cby-tab-nav a[href="#cby-tab-work"],
 .cby-module:has(#cby-tab-pricing:target) .cby-tab-nav a[href="#cby-tab-pricing"],
@@ -58,7 +58,7 @@
 .cby-module:has(#cby-tab-contact:target) .cby-tab-nav a[href="#cby-tab-about"] { color:#999!important;font-weight:400!important;border-bottom-color:transparent!important; }
 
 /* About panel */
-.cby-about-intro { font-size:14px!important;line-height:1.75!important;color:#333!important;margin-bottom:28px!important; }
+.cby-panel .cby-about-intro { font-size:14px!important;line-height:1.75!important;color:#333!important;margin-bottom:28px!important; }
 .cby-services { display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:32px; }
 .cby-service-title { font-size:11px!important;font-weight:700!important;letter-spacing:0.1em!important;text-transform:uppercase!important;margin-bottom:10px!important;color:#111!important; }
 .cby-service p { font-size:13px!important;line-height:1.7!important;color:#444!important; }
@@ -66,19 +66,19 @@
 
 /* Marquee */
 .cby-brands { border-top:1px solid #EBEBEB;padding-top:22px; }
-.cby-brands-label { font-size:10px!important;letter-spacing:0.1em;text-transform:uppercase;color:#AAA!important;margin-bottom:14px!important; }
+.cby-brands .cby-brands-label { font-size:10px!important;letter-spacing:0.1em;text-transform:uppercase;color:#AAA!important;margin-bottom:22px!important; }
 .cby-marquee { overflow:hidden;width:100%;max-width:100%;-webkit-mask-image:linear-gradient(to right,transparent,black 12%,black 88%,transparent);mask-image:linear-gradient(to right,transparent,black 12%,black 88%,transparent); }
 .cby-marquee-track { display:flex;align-items:center;gap:56px;width:max-content;animation:cby-scroll 32s linear infinite; }
 .cby-marquee-track img { height:28px!important;width:auto!important;object-fit:contain;filter:grayscale(100%) opacity(55%);transition:filter .2s;flex-shrink:0;border-radius:0!important; }
 .cby-marquee-track img:hover { filter:grayscale(0%) opacity(100%); }
 @keyframes cby-scroll { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 
-/* My Work — details/summary accordion */
+/* My Work â€” details/summary accordion */
 .cby-cs-details { border-bottom:1px solid #F0F0F0;margin-bottom:4px; }
 .cby-cs-details summary { cursor:pointer;padding:14px 0;font-size:13.5px!important;font-weight:600!important;color:#111!important;list-style:none!important;display:flex!important;align-items:center;justify-content:space-between; }
 .cby-cs-details summary::-webkit-details-marker { display:none; }
 .cby-cs-details summary::after { content:'+';font-size:18px;color:#AAA;font-weight:300; }
-.cby-cs-details[open] summary::after { content:'−'; }
+.cby-cs-details[open] summary::after { content:'âˆ’'; }
 .cby-cs-details[open] summary { margin-bottom:16px; }
 .cby-cs-client { font-size:10px!important;letter-spacing:0.12em;text-transform:uppercase;color:#AAA!important;margin-bottom:6px!important; }
 .cby-cs-title { font-size:17px!important;font-weight:700!important;line-height:1.3!important;margin-bottom:20px!important; }
@@ -88,7 +88,7 @@
 .cby-cs-col p { font-size:12.5px!important;line-height:1.7!important;color:#444!important; }
 
 /* Pricing */
-.cby-pricing-intro { font-size:14px!important;line-height:1.75!important;color:#333!important;margin-bottom:28px!important; }
+.cby-panel .cby-pricing-intro { font-size:14px!important;line-height:1.75!important;color:#333!important;margin-bottom:28px!important; }
 .cby-table { width:100%!important;border-collapse:collapse!important;font-size:13px!important; }
 .cby-table th { text-align:left!important;font-size:10px!important;letter-spacing:0.1em;text-transform:uppercase;color:#AAA!important;padding:0 16px 10px 0!important;border-bottom:1px solid #EBEBEB!important;border-top:none!important;border-left:none!important;border-right:none!important;font-weight:500!important;white-space:nowrap;background:none!important; }
 .cby-table td { padding:14px 16px 14px 0!important;border-bottom:1px solid #F2F2F2!important;border-top:none!important;border-left:none!important;border-right:none!important;color:#222!important;vertical-align:middle;white-space:nowrap;background:none!important; }
@@ -109,7 +109,7 @@
   .cby-left { position:static; }
   .cby-services { grid-template-columns:1fr; }
   .cby-cs-cols { grid-template-columns:1fr;gap:16px; }
-  .cby-table { font-size:11.5px!important; }
+  .cby-table { font-size:11.5px!important;display:block!important;overflow-x:auto!important; }
   .cby-table th { font-size:9px!important; }
 }
 </style>
@@ -118,11 +118,11 @@
   <div class="cby-layout">
 
     <div class="cby-left">
-      <img src="https://contentbyyousef.wordpress.com/wp-content/uploads/2026/04/logo.png" alt="Content by Yousef" class="cby-logo">
+      <img src="Logo.png" alt="Content by Yousef" class="cby-logo">
       <div class="cby-lockup">
-        <img src="https://contentbyyousef.wordpress.com/wp-content/uploads/2026/04/writing.png" alt="writing" class="cby-lockup-writing">
+        <img src="Writing.png" alt="writing" class="cby-lockup-writing">
         <span class="cby-lockup-plus">+</span>
-        <img src="https://contentbyyousef.wordpress.com/wp-content/uploads/2026/04/strategy.png" alt="strategy" class="cby-lockup-strategy">
+        <img src="Strategy.png" alt="strategy" class="cby-lockup-strategy">
       </div>
       <div class="cby-status">
         <span class="cby-dot"></span>
@@ -131,8 +131,8 @@
       <p class="cby-bio">I am a marketer / writer / strategist working with brands from startups to Fortune 500s.</p>
       <p class="cby-contact-head">Get in Touch</p>
       <div class="cby-contact-links">
-        <a href="mailto:contentbyyousef@gmail.com">✉ contentbyyousef@gmail.com</a>
-        <a href="https://linkedin.com/in/fatehpour" target="_blank" rel="noopener">→ linkedin.com/in/fatehpour</a>
+        <a href="mailto:contentbyyousef@gmail.com">&#9993; contentbyyousef@gmail.com</a>
+        <a href="https://linkedin.com/in/fatehpour" target="_blank" rel="noopener">&rarr; linkedin.com/in/fatehpour</a>
       </div>
     </div>
 
@@ -146,16 +146,16 @@
       </div>
 
       <div class="cby-panel" id="cby-panel-about">
-        <p class="cby-about-intro">Content strategy and writing are the two primary services I offer. Within these, you can pick from a range of sub-services — site audits, content inventories, commissioned white papers, and more. I have a fixed pricing model for writing services. For strategic work, you can bundle various asks like audits and messaging refreshes for a discounted rate.</p>
+        <p class="cby-about-intro">Content strategy and writing are the two primary services I offer. Within these, you can pick from a range of sub-services &mdash; site audits, content inventories, commissioned white papers, and more. I have a fixed pricing model for writing services. For strategic work, you can bundle various asks like audits and messaging refreshes for a discounted rate.</p>
         <div class="cby-services">
           <div class="cby-service">
             <p class="cby-service-title">Strategy</p>
-            <p>I've built out strategies for companies with 10 employees to orgs with 10,000+. You can hire me for something as simple as a content inventory and audit, or as impactful as a full messaging and brand refresh — and anything in between.</p>
+            <p>I've built out strategies for companies with 10 employees to orgs with 10,000+. You can hire me for something as simple as a content inventory and audit, or as impactful as a full messaging and brand refresh &mdash; and anything in between.</p>
           </div>
           <div class="cby-service">
             <p class="cby-service-title">Writing</p>
             <p>I specialize in B2B social, blog, and content writing. Every engagement includes a complimentary SEO analysis to ensure your content reaches the right people. I can also develop custom graphics to keep your readers engaged.</p>
-            <a href="#cby-tab-pricing" class="cby-pricing-link">See transparent pricing rates →</a>
+            <a href="#cby-tab-pricing" class="cby-pricing-link">See transparent pricing rates &rarr;</a>
           </div>
         </div>
         <div class="cby-brands">
@@ -190,11 +190,11 @@
       </div>
 
       <div class="cby-panel" id="cby-panel-work">
-        <details class="cby-cs-details" open="">
+        <details class="cby-cs-details" open>
           <summary>Bridgestone + Firestone</summary>
           <p class="cby-cs-client">Bridgestone + Firestone</p>
           <h3 class="cby-cs-title">End-to-end content strategy &amp; site redesign</h3>
-          <img src="https://contentbyyousef.wordpress.com/wp-content/uploads/2026/04/bridgestone.png" alt="Bridgestone project" class="cby-cs-img">
+          <img src="Bridgestone.png" alt="Bridgestone project" class="cby-cs-img">
           <div class="cby-cs-cols">
             <div class="cby-cs-col"><p class="cby-cs-col-head">My Role</p><p>As the sole content strategist on the team, I worked hand-in-hand with creative, UX, and tech to carry out a full site redesign across Bridgestone's consumer, corporate, and commercial business units.</p></div>
             <div class="cby-cs-col"><p class="cby-cs-col-head">The Challenge</p><p>Bridgestone and Firestone saw user experience hurdles due to their various business units and offerings being split throughout various sites. Consumers often felt confused on navigation and felt content didn't speak directly to their needs.</p></div>
@@ -205,7 +205,7 @@
           <summary>GlossGenius</summary>
           <p class="cby-cs-client">GlossGenius</p>
           <h3 class="cby-cs-title">B2B Ghostwriting</h3>
-          <img src="https://contentbyyousef.wordpress.com/wp-content/uploads/2026/04/glossgenius1.png" alt="GlossGenius project" class="cby-cs-img">
+          <img src="Glossgenius1.png" alt="GlossGenius project" class="cby-cs-img">
           <div class="cby-cs-cols">
             <div class="cby-cs-col"><p class="cby-cs-col-head">My Role</p><p>Ghostwriting to connect SMBs and one-person beauty and salon professionals to the right software for their needs. I returned to write a series of versus articles for GlossGenius, a salon and spa software built for beauty professionals.</p></div>
             <div class="cby-cs-col"><p class="cby-cs-col-head">The Challenge</p><p>SMBs and independent beauty professionals are inundated with tons of software options and little information around hidden fees and pricing. They needed clear, trustworthy comparisons to make confident decisions.</p></div>
@@ -216,25 +216,25 @@
           <summary>American Diabetes Association</summary>
           <p class="cby-cs-client">American Diabetes Association</p>
           <h3 class="cby-cs-title">Message house &amp; content strategy</h3>
-          <img src="https://contentbyyousef.wordpress.com/wp-content/uploads/2026/04/ada.png" alt="ADA project" class="cby-cs-img">
+          <img src="ADA.png" alt="ADA project" class="cby-cs-img">
           <div class="cby-cs-cols">
             <div class="cby-cs-col"><p class="cby-cs-col-head">My Role</p><p>As content strategist, I was tasked with auditing and drafting a message house for the ADA's three units: Diabetes.org, DiabetesPro, and The Food Hub.</p></div>
-            <div class="cby-cs-col"><p class="cby-cs-col-head">The Challenge</p><p>The ADA split messaging across three hubs — one for those seeking information on the disease, one for recipes, and another for researchers and professionals. Both messaging and navigation were impacted by this fragmentation.</p></div>
+            <div class="cby-cs-col"><p class="cby-cs-col-head">The Challenge</p><p>The ADA split messaging across three hubs &mdash; one for those seeking information on the disease, one for recipes, and another for researchers and professionals. Both messaging and navigation were impacted by this fragmentation.</p></div>
             <div class="cby-cs-col"><p class="cby-cs-col-head">The Solution</p><p>Working in tandem with the UX team, I created a message house that gave each hub its own distinct voice. We conducted interviews with ADA members and people living with diabetes, using empathy and clarity as our north star. All three hubs were refreshed with seamless navigation and messaging that meets users where they are.</p></div>
           </div>
         </details>
       </div>
 
       <div class="cby-panel" id="cby-panel-pricing">
-        <p class="cby-pricing-intro">I have a fixed pricing model for all writing services — no surprises, no overages. Every engagement includes SEO analysis, up to three rounds of revisions, Google Docs collaboration, and custom graphics where needed. For strategic services, you can bundle various asks like audits and messaging refreshes for a discounted rate.</p>
+        <p class="cby-pricing-intro">I have a fixed pricing model for all writing services &mdash; no surprises, no overages. Every engagement includes SEO analysis, up to three rounds of revisions, Google Docs collaboration, and custom graphics where needed. For strategic services, you can bundle various asks like audits and messaging refreshes for a discounted rate.</p>
         <table class="cby-table">
           <thead>
             <tr>
               <th>Content Type</th>
-              <th>Short (600–800w)</th>
-              <th>Medium (900–1200w)</th>
-              <th>Long (1300–1500w)</th>
-              <th>Very Long (1600–1800w)</th>
+              <th>Short (600&ndash;800w)</th>
+              <th>Medium (900&ndash;1200w)</th>
+              <th>Long (1300&ndash;1500w)</th>
+              <th>Very Long (1600&ndash;1800w)</th>
             </tr>
           </thead>
           <tbody>
@@ -247,22 +247,22 @@
             </tr>
             <tr>
               <td>Ebook / White Paper</td>
-              <td class="cby-dash">—</td>
-              <td class="cby-dash">—</td>
+              <td class="cby-dash">&mdash;</td>
+              <td class="cby-dash">&mdash;</td>
               <td class="cby-price">$900</td>
               <td class="cby-price">$1,100</td>
             </tr>
           </tbody>
         </table>
-        <p class="cby-pricing-note">Fixed fees with no overage charges — additional words beyond the commissioned length are included at no extra cost. Strategic services available at bundled rates on request.</p>
+        <p class="cby-pricing-note">Fixed fees with no overage charges &mdash; additional words beyond the commissioned length are included at no extra cost. Strategic services available at bundled rates on request.</p>
       </div>
 
       <div class="cby-panel" id="cby-panel-contact">
-        <h2 style="font-size:26px;font-weight:700;margin-bottom:12px">Let's talk!</h2>
-        <p style="font-size:14px;line-height:1.7;color:#444;margin-bottom:8px">Whether you need a full content strategy or a few well-crafted articles, I'd love to hear what you're working on.</p>
+        <h2 style="font-size:26px;font-weight:700;margin-bottom:12px;">Let's talk!</h2>
+        <p style="font-size:14px;line-height:1.7;color:#444;margin-bottom:8px;">Whether you need a full content strategy or a few well-crafted articles, I'd love to hear what you're working on.</p>
         <div class="cby-contact-details">
-          <a href="mailto:contentbyyousef@gmail.com">✉ contentbyyousef@gmail.com</a>
-          <a href="https://linkedin.com/in/fatehpour" target="_blank" rel="noopener">→ linkedin.com/in/fatehpour</a>
+          <a href="mailto:contentbyyousef@gmail.com">&#9993; contentbyyousef@gmail.com</a>
+          <a href="https://linkedin.com/in/fatehpour" target="_blank" rel="noopener">&rarr; linkedin.com/in/fatehpour</a>
         </div>
       </div>
 
